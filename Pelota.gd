@@ -5,14 +5,17 @@ var direction = Vector2.ZERO
 var is_moving = false
 var angular_speed = PI
 
-func _ready():
+func reset_ball():
 	# Cuando el nodo este cargado, que pasara
-	randomize()
-	
 	speed = 600
 	direction.x = [-1, 1][randi() % 2]
 	direction.y = [-0.8, 0.8][randi() % 2]
 	is_moving = true
+
+
+func _ready():
+	randomize()
+	reset_ball()
 
 func _physics_process(delta):
 	# Funcion ue se ejecuta una vez por frame 
