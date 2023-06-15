@@ -1,4 +1,5 @@
 extends KinematicBody2D
+class_name Pelota
 
 var speed = 0
 var direction = Vector2.ZERO

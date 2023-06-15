@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var speed = 600
+var speed = 400
 onready var ball = get_parent().find_node("Pelota")
 	
 func _physics_process(_delta):
