@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Pelota",
+"language": "GDScript",
+"path": "res://Pelota.gd"
+} ]
+_global_script_class_icons={
+"Pelota": ""
+}
+
 [application]
 
 config/name="GodotPong"
